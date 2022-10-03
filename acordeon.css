@@ -1,0 +1,70 @@
+.acordeon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid darkred;
+    border-radius: .5rem;
+    transition: .5s;
+
+}
+
+.acordeon.open, .acordeon:hover{
+    background-color: #733a94;
+    border-color: #55569E;
+}
+
+.acordeon .trigger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700; 
+    padding: 1rem 2 rem;
+    background-color: transparent;
+    color:aliceblue;
+    border: none;
+}
+
+.acordeon .trigger::after{
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("seta branca.png");
+    transition: .3s;
+}
+
+.acordeon .trigger:hover{
+    cursor: pointer;
+}
+
+.acordeon.open{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid darkred;
+    border-radius: .5rem;
+    transition: 1s;
+
+}
+
+.acordeon.open .trigger::after{
+   transform: rotate(180deg);
+}
+
+.acordeon .content{
+    display: none;
+    transition: .3s;
+}
+
+.acordeon.open .content{
+    display: block;
+    align-items: center;
+    padding: 0 1rem 1rem 2rem ;
+}
+

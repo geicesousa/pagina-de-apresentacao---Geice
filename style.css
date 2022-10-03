@@ -1,0 +1,133 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 5rem;
+    padding: 3rem;
+    border: 2px solid darkred;
+    border-radius: 1rem;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}    
+
+/* header */
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: .6rem;
+}
+
+h1{
+    font-weight: bolder;
+    display: inline-block;
+    text-align: center;
+    padding: .5rem;
+    vertical-align: middle;    
+}
+
+/* lista de informações */
+#informacoes p{
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 800;
+}
+
+#informacoes a{
+    text-decoration: none;
+    color: black
+}
+   
+.profissao::before{
+    content: "👩🏾‍💼👩🏾‍💻 ";
+    width: 24px;
+    height: 24px;
+}
+
+.localizacao::before{
+    content: "🌎📍 ";
+    width: 20px;
+    height: 20px;
+}
+
+.telefone::before{
+    content: "☎️📱 ";
+    width: 20px;
+    height: 20px;
+}
+
+.email::before{
+    content: "📧 ";
+    width: 24px;
+    height: 24px;
+}
+
+/* rodapé */
+footer{
+    margin-top: 3rem ;
+    margin-bottom: 0px;
+    top: 80%;
+}
+
+footer h6{
+    text-align: center;
+    padding-top: 50px;
+    vertical-align: text-bottom;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+}
+
+/* links */
+#informacoes a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+/* informações dentro do acordeon */
+.linguas, .formacao, .skills{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skills h4{
+    text-align: center;
+}
+
+.skills .tools, .profissional{
+text-align: justify;
+justify-content: space-around;
+margin-bottom: 15px;
+}
+
+section.tools, section.profissional{
+    width: 230px;
+    height: 150px; 
+}
+
+.linguas li{
+    padding-right: 1.5rem;
+    font-size: 1rem;
+}
+
+.profissional li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.profissional li img{
+    /* usar display e position para ajeitar 
+    posicionamento das logos no mobile */
+    width: 55px;
+    height: 55px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - DIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Roboto:ital,wght@0,100;1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="acordeon.css">
+</head>
+
+<body>
+    <header>
+        <center><img class="foto" src="IMG_20210125_135300094.jpg" alt=""></center>
+
+        <h1 class="titulo">Olá, eu sou Geice Sousa Pinho</h1>
+    </header>
+
+    <div id="informacoes" class="informacoes">
+        <p class="profissao">Estudande de Programação e Desenvolvimento Web</p>
+        <p class="localizacao">Salvador-BA, Brasil</p>
+        <p class="telefone">
+            <a href="tel:(71)987620419">(71) 9 8762-0419</a>
+        </p>
+        <p class="email"> 
+            <a href="mailto:geicesousa@outlook.com">geicesousa@outlook.com</a>
+        </p>
+    </div>
+
+     <section class="acordeon ">
+        <button class="trigger">Skills</button>
+            <div class="content">
+                <div class="skills"> 
+                <section class="tools">
+                    <h4>Habilidades pessoais:</h4>
+                    <ul class="pessoal">
+                        <li>Facilidade <br> de Comunicação</li>
+                        <li>Organização</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Flexibilidade</li>
+                    </ul>
+                </section>
+                
+                <section class="profissional">
+                    <h4>Habilidades profissionais:</h4>
+                    <ul>
+                        <li><img src="css.png" alt="logo css"></li>
+                        <li><img src="html.png" alt="logo html"></li>
+                        <li><img src="js.png" alt="logo js"></li>
+                        <li><img src="vscode.png" alt="logo vscode"></li>
+                    </ul>
+                </section>
+                </div> 
+            </div>
+    </section>
+    
+    <section class="acordeon ">
+        <button  class="trigger">Educação</button>
+            <div class="content">
+                <ul class="formacao">
+                    <li>BI em Humanidades</li>
+                    <li>Serviço Social</li>
+                    <li>Programação e Desenvolvimento Web</li>
+                </ul>
+            </div>   
+        </section>
+
+    <section  class="acordeon ">
+        <button class="trigger" type="button">Idiomas</button>
+            <div class="content">
+                <ul class="linguas">
+                    <li>Português</li>
+                    <li>Espanhol</li>
+                </ul>
+            </div>
+    </section>
+
+    <footer class="rodape">
+        <h6>Todos os direitos reservados &copy; 2022, 
+            <a href="https://github.com/Geice-Sousa">Geice</a>.
+        </h6>
+    </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
